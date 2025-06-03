@@ -11,7 +11,7 @@
       condition: event.payload.commits is selectattr('modified', 'contains', "README.md")
       action:
         run_job_template:
-          name: Say Hello
+          name: Demo Job Template
           organization: Default
 
     - name: Debug all other events
