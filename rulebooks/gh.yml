@@ -7,7 +7,7 @@
         port: 5000
   
   rules:
-    - name: Prometheus alert.rules push event
+    - name: Respond when README updated
       condition: event.payload.commits is selectattr('modified', 'contains', "README.md")
       action:
         run_job_template:
