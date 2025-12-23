@@ -2,7 +2,6 @@
 - name: Say Hello
   hosts: localhost
   tasks:
-
-  - name: Debug
-    ansible.builtin.debug:
-      msg: "Hello"
+    - name: Debug
+      ansible.builtin.debug:
+        msg: Hello
